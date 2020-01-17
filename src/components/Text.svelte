@@ -4,9 +4,9 @@
 
 <div class="c-text">
 	{#if text !== ''}
-		<h1>Hello, {text}!</h1>
+		<p>Hello, {text}!</p>
 	{:else}
-		<h1>Empty!</h1>
+		<p>Empty!</p>
 	{/if}
 	<slot/>
 </div>
@@ -14,6 +14,6 @@
 <style lang="scss">
 	.c-text {
 		color: #333;
-		font-size: 14px;
+		font-size: 24px;
 	}
 </style>
