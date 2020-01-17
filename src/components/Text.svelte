@@ -11,7 +11,7 @@
 	<slot/>
 </div>
 
-<style>
+<style lang="scss">
 	.c-text {
 		color: #333;
 		font-size: 14px;
