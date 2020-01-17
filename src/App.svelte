@@ -1,6 +1,6 @@
 <script>
-	import Heading from './Components/Heading.svelte';
-	import Text from './Components/Text.svelte';
+	import Heading from './components/Heading.svelte';
+	import Text from './components/Text.svelte';
 	export let name;
 </script>
 
