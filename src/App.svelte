@@ -1,6 +1,8 @@
 <script>
-	import Heading from './components/Heading.svelte';
-	import Text from './components/Text.svelte';
+	import Heading from './Components/Heading.svelte';
+	import Text from './Components/Text.svelte';
+	import Counter from './Components/Counter.svelte';
+
 	export let name;
 </script>
 
@@ -22,6 +24,8 @@
 		<p>※nodeのパスはターミナルで[which node]を実行してnodeのパスを確認できる。</p>
 		<p>参考URL：<a href="https://medium.com/@sean_27490/svelte-sapper-with-sass-271fff662da9" target="_blank">SassteとSvelte / Sapper！</a></p>
 	</div>
+
+	<Counter />
 </main>
 
 <style lang="scss">
