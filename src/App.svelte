@@ -22,7 +22,7 @@
 		<p>まずプロジェクトディレクトリの直下に「svelte.config.js」を作成して設定を記述。</p>
 		<p>VSCodeで「Svelte> Language-server：Runtime」にnodeのパスを記述して再起動。</p>
 		<p>※nodeのパスはターミナルで[which node]を実行してnodeのパスを確認できる。</p>
-		<p>参考URL：<a href="https://medium.com/@sean_27490/svelte-sapper-with-sass-271fff662da9" target="_blank">SassteとSvelte / Sapper！</a></p>
+		<p>参考URL：<a href="https://medium.com/@sean_27490/svelte-sapper-with-sass-271fff662da9" target="_blank">SassとSvelte / Sapper！</a></p>
 	</div>
 
 	<Counter />
