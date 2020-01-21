@@ -1,9 +1,20 @@
 <script>
-	import Heading from './Components/Heading.svelte';
-	import Text from './Components/Text.svelte';
-	import Counter from './Components/Counter.svelte';
+	import Heading from './components/Heading.svelte';
+	import Text from './components/Text.svelte';
+	import Counter from './components/Counter.svelte';
+	import Todos from './components/Todos.svelte';
 
 	export let name;
+
+    let uid = 1;
+	let todos = [
+		{ id: uid++, done: false, description: 'write some docs' },
+		{ id: uid++, done: false, description: 'start writing blog post' },
+		{ id: uid++, done: true,  description: 'buy some milk' },
+		{ id: uid++, done: false, description: 'mow the lawn' },
+		{ id: uid++, done: false, description: 'feed the turtle' },
+		{ id: uid++, done: true, description: 'fix some bugs' },
+	];
 </script>
 
 <main>
@@ -26,6 +37,8 @@
 	</div>
 
 	<Counter />
+
+	<Todos todos={todos} uid={uid} />
 </main>
 
 <style lang="scss">
