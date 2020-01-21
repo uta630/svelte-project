@@ -5,6 +5,7 @@ import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
 import preprocess from 'svelte-preprocess'
 import autoprefixer from 'autoprefixer'
+import babel from 'rollup-plugin-babel';
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -43,6 +44,11 @@ export default {
 			dedupe: importee => importee === 'svelte' || importee.startsWith('svelte/')
 		}),
 		commonjs(),
+
+		babel({
+			extensions: ['.js', '.mjs', '.html', '.svelte'],
+			include: ['src/**', 'node_modules/svelte/**'],
+		}),
 
 		// In dev mode, call `npm run start` once
 		// the bundle has been generated
